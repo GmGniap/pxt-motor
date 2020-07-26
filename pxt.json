@@ -1,7 +1,7 @@
 {
-    "name": "motor",
+    "name": "iyi_robot စမ်းသပ်ခြင်း",
     "version": "0.0.1",
-    "description": "This is dc motor, stepper motor, steering gear library. And modifited to add Ultrasonic sensor",
+    "description": "မြန်မာဘာသာ - This is dc motor, stepper motor, steering gear library. And modifited to add Ultrasonic sensor",
     "license": "GNU",
     "dependencies": {
         "core": "*"

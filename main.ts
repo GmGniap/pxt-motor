@@ -515,7 +515,9 @@ namespace motor {
     }
 }
 
-//% Sonar Library 
+/**
+ * Sonar Library
+ */ 
 enum PingUnit {
     //% block="μs"
     MicroSeconds,
@@ -532,6 +534,7 @@ enum PingUnit {
 namespace sonar {
     /**
      * Send a ping and get the echo time (in microseconds) as a result
+     * Ping လွှတ်၍ ပဲတင့်သံအချိန် ကို မူတည်၍ ရလာဒ်ထုတ်ဝေခြင်း
      * @param trig tigger pin
      * @param echo echo pin
      * @param unit desired conversion unit
