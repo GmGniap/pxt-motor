@@ -1,57 +1,50 @@
-# DF-Driver
+# gator:light Light Sensor
 
-Micro:bit motor drive expansion board.
----------------------------------------------------------
+[![Community Discord](https://img.shields.io/discord/448979533891371018.svg)](https://aka.ms/makecodecommunity)
 
-## Table of Contents
+The gator:starter, which includes the gator:light and gator:temp can be purchased [here.](https://www.sparkfun.com/products/14891)
+The gator:light, included on the gator:starter is an analog light sensor that can be alligator clipped to the micro:bit or gator:bit board.
 
-* [URL](#url)
-* [Summary](#summary)
-* [Blocks](#blocks)
-* [License](#license)
+![SparkFun gator:light](https://raw.githubusercontent.com/sparkfun/pxt-gator-light/master/icon.png)  
 
-## URL
-project URL:  ```https://github.com/DFRobot/pxt-motor```
+## ~ hint
 
-## Summary
-Micro: bit motor driven expansion board is not only expanded the motor drive, in the integration of this extended board four motor driven, 2 road, on the basis of stepper motor driver, also raises the additional 8 road steering gear interface, IO port, 2 road 9 I2C interface.
-The motor adopts the interface mode of large current, and the steering machine, I2C and IO port all use Gravity standard interface to support a large number of modules and sensors.
-The expansion board USES 3.5v ~ 5.5v power supply, 3.5mm plug and wiring two power interface modes.It has the characteristics of wide range of voltage adaption, large number of ports, compact size, plug and play, convenience and so on.
+To use this package, go to https://makecode.microbit.org, click ``Add package`` and search for **gator-light**. The package is located [here](https://makecode.microbit.org/pkg/sparkfun/pxt-gator-light)
 
-## Blocks
-### 1.Servo
-![image](https://github.com/DFRobot/pxt-motor/blob/master/image/1.png)
+## ~
 
-### 2.DC Motor
-![image](https://github.com/DFRobot/pxt-motor/blob/master/image/7.png)
+## Basic usage
 
-### 3.Stepper-28
-![image](https://github.com/DFRobot/pxt-motor/blob/master/image/10.png)<br>
-![image](https://github.com/DFRobot/pxt-motor/blob/master/image/2.png)
+```blocks
+//Sets the value of the light variable to the value read from the gator:light
+let light = 0
+light = gatorlight.light(AnalogPin.P0, gatorlightType.Lux)
+```
 
-### 4.Stepper-42
-![image](https://github.com/DFRobot/pxt-motor/blob/master/image/8.png)<br>
-![image](https://github.com/DFRobot/pxt-motor/blob/master/image/3.png)
+Use ``||Get light on pin||`` to read the light value from a gator:light sensor attached to a given pin in lux or the straight ADC value.
 
-### 5.Dual Stepper
-![image](https://github.com/DFRobot/pxt-motor/blob/master/image/5.png)<br>
-![image](https://github.com/DFRobot/pxt-motor/blob/master/image/9.png)
+## Example: Light Detector
 
-### 6.Stop the motor
-![image](https://github.com/DFRobot/pxt-motor/blob/master/image/6.png)
-
-### 7.Stop all motors
-![image](https://github.com/DFRobot/pxt-motor/blob/master/image/4.png)
-
-
-## License
-
-GNU
+```blocks
+//Read light value and write it to the micro:bit screen as a bar graph.
+let light = 0
+basic.forever(function () {
+    light = gatorlight.light(AnalogPin.P0, gatorlightType.Lux)
+    led.plotBarGraph(
+        light,
+        1023
+    )
+})
+```
 
 ## Supported targets
 
 * for PXT/microbit
-(The metadata above is needed for package search.)
+
+## License
+
+MIT
+
 ```package
-gamePad=github:DFRobot/pxt-motor
+gatorlight=github:sparkfun/pxt-gator-light
 ```

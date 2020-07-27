@@ -1,18 +1,18 @@
 {
-    "name": "iyi_robot စမ်းသပ်ခြင်း",
+    "name": "gatorlight",
     "version": "0.0.1",
-    "description": "မြန်မာဘာသာ - This is dc motor, stepper motor, steering gear library. And modifited to add Ultrasonic sensor",
-    "license": "GNU",
+    "description": "SparkFun gator:light Temperature Sensor",
+    "license": "MIT",
     "dependencies": {
         "core": "*"
     },
     "files": [
         "README.md",
-        "main.ts",
-        "_locales/zh/motor-strings.json"
+        "gatorlight.ts",
+        "gatorlight.cpp",
+        "shims.d.ts",
+        "enums.d.ts"
     ],
-    "testFiles": [
-        "test.ts"
-    ],
-    "public": false
+    "testFiles": [],
+    "public": true
 }
