@@ -1,6 +1,6 @@
 {
-    "name": "main",
-    "version": "0.0.1",
+    "name": "iyi_bot စမ်းသပ်ခြင်း",
+    "version": "0.0.2",
     "description": "MakeCode Extension Collection & Test",
     "license": "MIT",
     "dependencies": {
@@ -8,11 +8,7 @@
     },
     "files": [
         "README.md",
-        "gatorlight.ts",
-        "gatorlight.cpp",
-        "shims.d.ts",
-        "enums.d.ts",
-        "main.ts",
+          "main.ts",
         "_locales/zh/motor-strings.json"
     ],
     "testFiles": [
