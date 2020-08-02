@@ -14,7 +14,7 @@
         "enums.d.ts",
     ],
     "testFiles": [
-      "test.ts"
+
     ],
     "public": true
 }
