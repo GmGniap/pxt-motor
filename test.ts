@@ -1035,5 +1035,15 @@ namespace MAX7219_Matrix {
             0b00000001,
             0b00000010,
             0b00000000]]
+}
 
+enum rotation_direction {
+    //% block="none"
+    none = 0,
+    //% block="clockwise"
+    clockwise = 1,
+    //% block="counter-clockwise"
+    counterclockwise = 2,
+    //% block="180-degree"
+    one_eighty_degree = 3,
 }
