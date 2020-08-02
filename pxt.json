@@ -1,5 +1,5 @@
 {
-    "name": "Testing Extension",
+    "name": "main",
     "version": "0.0.1",
     "description": "MakeCode Extension Collection & Test",
     "license": "MIT",
@@ -12,9 +12,11 @@
         "gatorlight.cpp",
         "shims.d.ts",
         "enums.d.ts",
+        "main.ts",
+        "_locales/zh/motor-strings.json"
     ],
     "testFiles": [
-
+      "test.ts"
     ],
     "public": true
 }
